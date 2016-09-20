@@ -194,12 +194,12 @@
 				<!-- <div class="row row-grid" id="porfolio-row-3"> -->
 					<div class="col-sm-12 col-md-4 col-lg-4 feature-box">
 						<h5>Carousel</h5>
-						<p>Working on it currently</p>
+						<p>Re-implemented! Surface pic could use work</p>
 					</div>
 
 					<div class="col-sm-12 col-md-4 col-lg-4 feature-box">
 						<h5>Portfolio Section</h5>
-						<p>Still to be re-implemented!</p>
+						<p>Re-implemented with JavaScript!</p>
 					</div>
 
 					<div class="col-sm-12 col-md-4 col-lg-4 feature-box">
@@ -423,7 +423,8 @@
 			<div class="row row-grid" id="work-example-box">
 				<div class="col-sm-12 col-md-6 col-lg-6" id="work-example-left">
 					<!-- <img class="img-responsive" src="img/mid-laptop.jpg" alt="Laptop"> -->
-        		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8C4lK41SX-Q" frameborder="0" allowfullscreen scrolling="yes"></iframe>
+					<iframe class="embed-responsive-item" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ90260rVG1moRkM2MIXVWBAQ&key=AIzaSyA2usXOTy1PzCO6CH9sSVmEPPOKTaIecbA&zoom=18&center=-37.8129,144.9699" allowfullscreen></iframe>
+        	<!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8C4lK41SX-Q" frameborder="0" allowfullscreen scrolling="yes"></iframe> -->
 				</div><!-- end work-example-left -->
 				<div class="col-sm-12 col-md-6 col-lg-6" id="work-example-right">
 					<!-- <br>
@@ -531,6 +532,9 @@
 						<p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:asdfasdfasdf"> someone@somewhere.com</a></p>
 						<p><span class="glyphicon glyphicon-earphone"></span> +61 3 1234 5678</p>
 						<p><span class="glyphicon glyphicon-globe"></span><a href="https://www.github.com/davidsretenovic"> GitHub</a></p>
+						<br>
+						<div id="map">
+						</div>
       		</div> <!-- end id contact-details -->
 					<div class="col-sm-12 col-md-8 col-lg-8 contact-form">
 						<form>
@@ -607,5 +611,7 @@
 	<script src="js/work.js"></script>
 	<!-- custom -->
 	<script src="js/scripts.js"></script>
+	<!-- google maps api -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe__Ijid6HdDgyJIezarEKl9YVz2lEkaI&callback=initMap" async defer></script>
 </body>
 </html>

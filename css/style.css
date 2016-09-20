@@ -331,6 +331,11 @@ header #logo img {
 	/* background-color: #999; */
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 #work-example-left img {
 	height: 500px;
 	width: 100% !important;

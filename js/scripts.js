@@ -10,6 +10,51 @@
   }
 }(document, 'script', 'twitter-wjs');
 
+// 2.10 - map
+//var map;
+//function initMap() {
+//  map = new google.maps.Map(document.getElementById('map'), {
+//  center: {lat: -37.814, lng: 144.965},
+//    zoom: 15
+//  });
+//}
+
+function initMap() {
+  var myLatLng = {lat: -37.814, lng: 144.965};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: myLatLng,
+    styles: [
+      {
+        featureType: 'all',
+        stylers: [
+          { saturation: -80 }
+        ]
+      },{
+        featureType: 'road.arterial',
+        elementType: 'geometry',
+        stylers: [
+          { hue: '#00ffee' },
+          { saturation: 50 }
+        ]
+      },{
+        featureType: 'poi.business',
+        elementType: 'labels',
+        stylers: [
+          { visibility: 'off' }
+        ]
+      }
+    ]
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Bourke Street Mall'
+  });
+}
+
 // Document ready load
 $(document).ready(function(){
   // Smooth scrolling
